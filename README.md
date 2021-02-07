@@ -1,2 +1,2 @@
 # xtrkcad.demos-fr
-package pluging demos translation fr xtrkcad
+Initial base source package pluging demos translation fr xtrkcad
