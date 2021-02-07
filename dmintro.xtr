@@ -1,0 +1,79 @@
+VERSION 1
+DEMOINIT
+ORIG 6.000 0.000 0.000
+PARAMETER display description-fontsize 18
+REDRAW
+RESET
+MESSAGE
+Bienvenue dans la démonstration d'XTrackCAD.
+
+Cela vous montrera certaines des fonctionnalités d'XTrackCAD dans une présentation automatisée. Cette fenêtre contient un certain nombre de contrôles et une zone de message (j'espère que maintenant vous les lisez ). 
+
+Les contrôles sont :
+Pas à pas - passe à l'étape suivante de la démo.
+Suivant - passe à la démo suivante.
+Quitter - quitter la démo et revenir à XTrackCAD.
+Vitesse- contrôle la vitesse de la démo.
+
+Cliquez sur Pas à pas pour passer au message suivant.
+=========================================
+END
+STEP
+CLEAR
+MESSAGE
+Si vous utilisez la démo pour la première fois, vous devez définir les positions de la fenêtre. Assurez-vous que la fenêtre principale n'est pas masquée par la fenêtre de démonstration.
+=========================================
+END
+STEP
+CLEAR
+MESSAGE
+Vous pouvez maintenant déplacer la fenêtre de démonstration en y faisant glisser la barre de titre. Il est préférable de le déplacer vers le haut de l'écran.
+
+Les différents contrôles sont désactivés lorsqu'il serait inopportun de cliquer dessus. Lorsque la démo est en cours d'exécution, le bouton Étape est désactivé. Lorsque la démonstration est en pause, le bouton Étape est activé et vous pouvez cliquer dessus lorsque vous êtes prêt à afficher la partie suivante de la démonstration.
+
+Vous pouvez revenir à XTrackCAD à tout moment en cliquant sur Quitter.
+
+Vous pouvez régler la vitesse de la démo avec la commande vitesse.
+=========================================
+END
+STEP
+CLEAR
+DRAW 1 0.000000 0.000000 0.000000
+	L3 0 0.444444 0.000000 0.000000 0 72.000000 0.000000 0
+	END
+DRAW 2 0.000000 0.000000 0.000000
+	L3 0 0.444444 72.000000 0.000000 0 72.000000 24.000000 0
+	END
+DRAW 3 0.000000 0.000000 0.000000
+	L3 0 0.444444 72.000000 24.000000 0 0.000000 24.000000 0
+	END
+DRAW 4 0.000000 0.000000 0.000000
+	L3 0 0.444444 0.000000 24.000000 0 0.000000 0.000000 0
+	END
+DRAW 5 0.000000 0.000000 0.000000
+	L3 0 0.444444 0.000000 0.000000 0 72.000000 24.000000 0
+	END
+DRAW 6 0.000000 0.000000 0 0.000000
+	L3 0 0.444444 0.000000 24.000000 0 72.000000 0.000000 0
+	END
+REDRAW
+MESSAGE
+Les démos sont conçues pour tenir dans une fenêtre d'une certaine taille.
+
+Pour de meilleurs résultats, modifiez la taille de la fenêtre principale XTrackCAD pour que le rectangle soit complètement visible.
+
+Vous pouvez le faire en faisant glisser le coin inférieur droit de la fenêtre.
+END
+MESSAGE
+=========================================
+END
+STEP
+CLEAR
+MESSAGE
+C'est la fin de la démonstration d'introduction.
+
+Veuillez cliquer sur étape suivante pour la prochaine démonstration ou quitter pour revenir à XTrackCAD.
+=========================================
+END
+STEP
+CLEAR

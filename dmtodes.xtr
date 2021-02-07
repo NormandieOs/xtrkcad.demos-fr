@@ -1,0 +1,61 @@
+VERSION 2
+DEMOINIT
+ORIG 8.000 0.000 0.000
+REDRAW
+RESET
+MESSAGE
+Ces exemples présentent certaines des différentes fenêtres de conception 
+d'aiguillage. Chaque fenêtre est utilisée pour un type d'aiguillage 
+différent.
+
+Chaque fenêtre de dialogue contient un certain nombre de paramètres à
+renseigner et une ou deux lignes de description.
+
+Vous pouvez imprimer le dessin pour vérifier les dimensions avant de les
+enregistrer.
+END
+STEP
+CTURNOUT DESIGNER SHOW Regular Turnout
+#PARAMETER turnoutNew anglemode 0
+MESSAGE
+_________________________________________
+
+Il s'agit d'un aiguillage normal.
+
+Outre les dimensions, vous entrez également le titre (fabricant, description 
+et numéro de pièce). Pour les aiguillages avec versions à gauche et à 
+droite, la description et les références sont enregistrées séparément.
+
+Certains aiguillages et sections de rails sont pré-montés sur un ballast. 
+Pour ces pièces, vous pouvez spécifier la largeur du ballast, l'épaisseur 
+des lignes tracées pour le bord du ballast et la couleur.
+END
+STEP
+#CTURNOUT DESIGNER HIDE Regular Turnout
+PARAMETER turnoutNew cancel
+CTURNOUT DESIGNER SHOW Double Slipswitch
+#PARAMETER turnoutNew anglemode 0
+MESSAGE
+_________________________________________
+
+La traversée de jonction double n'est décrit que par quelques paramètres.
+END
+STEP
+#CTURNOUT DESIGNER HIDE Double Slipswitch
+PARAMETER turnoutNew cancel
+CTURNOUT DESIGNER SHOW Double Crossover
+#PARAMETER turnoutNew anglemode 0
+MESSAGE
+_________________________________________
+
+La traversée-jonction double n'a besoin que d'une longueur et d'une
+séparation des rails.
+END
+STEP
+#CTURNOUT DESIGNER HIDE Double Crossover
+PARAMETER turnoutNew cancel
+MESSAGE
+=========================================
+END
+STEP
+CLEAR

@@ -1,0 +1,134 @@
+VERSION 1
+DEMOINIT
+ORIG 12.000 0.000 0.000
+PARAMETER display description-fontsize 18
+REDRAW
+RESET
+MOUSE 1 1.5 1.5
+MESSAGE
+Dans la zone de dessin de la fenêtre principale, vous verrez une flèche vide à la place du pointeur de souris. Cette démo la déplacera pour vous montrer comment fonctionnent les différentes commandes.
+
+La flèche vide correspond au pointeur de la souris sans appuyer sur le bouton.
+END
+STEP
+MOUSE 1 34.560 28.000
+CLEAR
+MESSAGE
+Lorsque le bouton gauche de la souris est enfoncé, le curseur de la souris semble clignoter et la flèche creuse est remplacée par une flèche rouge pointant vers la gauche tant que le bouton est enfoncé.
+
+Remarque : ces changements de couleur ne se produisent que pendant la démonstration pour simuler des frappes sur les boutons de la souris.
+END
+STEP
+MOUSE 2 34.560 28.000
+#RESET
+MESSAGE
+_________________________________________
+
+Déplacer la souris en maintenant le bouton de la souris enfoncé s'appelle «glisser».
+END
+STEP
+MOUSE 3 36.160 4.000
+#RESET
+MESSAGE
+_________________________________________
+
+Lorsque le bouton gauche de la souris est relâché, le pointeur de la souris clignote et la flèche noire vide est restaurée.
+END
+STEP
+MOUSE 4 36.160 4.000
+RESET
+MESSAGE
+_________________________________________
+
+Le glissement avec le bouton droit est représenté par un curseur bleu plein pointé vers la droite.
+END
+STEP
+MOUSE 5 36.160 4.000
+MOUSE 6 3.680 4.800
+#RESET
+MESSAGE
+__________________________________________
+
+Relâcher le clic droit.
+END
+STEP
+MOUSE 7 3.680 4.800
+RESET
+MESSAGE
+=========================================
+END
+STEP
+CLEAR
+MESSAGE
+Parfois, la touche Maj est maintenue enfoncée pendant l'utilisation de la souris. 
+
+Cette situation est indiquée par une flèche encadrée avec la lettre S près de la flèche.
+END
+STEP
+KEYSTATE 2
+MOUSE 1 7.520 26.080
+RESET
+MESSAGE
+__________________________________________
+
+Le bouton gauche de la souris est maintenu enfoncé avec la touche Maj et déplacé pour un glissement vers la gauche.  
+
+END
+STEP
+KEYSTATE 2
+MOUSE 2 7.520 26.080
+KEYSTATE 2
+MOUSE 3 7.520 4.800
+KEYSTATE 2
+MOUSE 4 7.520 4.800
+STEP
+CLEAR
+MESSAGE
+___________________________________________
+
+Parfois, la touche Ctrl est maintenue enfoncée lorsque vous utilisez la souris. 
+
+C'est indiqué par une tête de flèche pleine vers le haut avec la lettre C près de la flèche.
+
+END
+STEP
+KEYSTATE 4
+MOUSE 1 7.520 26.080
+RESET
+MESSAGE
+__________________________________________
+
+Si le bouton gauche de la souris est maintenu enfoncé pendant que le contrôle est effectué, il s'agit d'un Ctrl-Déplacer et d'un Ctrl-Gauche-Glisser.   
+
+Ceci est indiqué par une flèche à tête ouverte tournée vers la gauche, avec la lettre C à côté.
+
+END
+STEP
+KEYSTATE 4
+MOUSE 2 7.520 26.080
+KEYSTATE 4
+MOUSE 3 3.680 4.800
+KEYSTATE 4
+MOUSE 4 3.680 4.800 
+RESET
+MESSAGE
+___________________________________________
+
+Vous pouvez également utiliser la touche Contrôle avec le bouton droit de la souris. 
+
+C'est indiqué par une flèche pleine orienté vers la droite avec une tête de flèche ouverte et la lettre C près de la flèche
+
+END
+STEP
+KEYSTATE 4
+MOUSE 5 3.680 4.080
+KEYSTATE 4
+MOUSE 6 26.520 26.080
+KEYSTATE 4
+MOUSE 7 26.520 26.080
+RESET
+MESSAGE
+=========================================
+END
+STEP
+CLEAR

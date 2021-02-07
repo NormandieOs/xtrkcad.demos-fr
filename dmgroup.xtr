@@ -1,0 +1,589 @@
+# XTrkCad Version: 3.0.1, Date: Wed Sep 20 22:05:35 2000
+
+VERSION 10
+DEMOINIT
+PARAMETER display labelenable 1
+ORIG 1.0 0.0 0.0
+TURNOUT  6 0 0 0 0 DEMO 2 2.125000 2.281250 0 0.000000 "Peco-55	Medium Right	SL-E395F"
+	E 2.125000 2.281250 270.000000
+	E 7.530000 2.281250 90.000000
+	E 7.495000 1.759250 99.686000
+	D -0.108750 -0.832750
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 23.136000 0.351000 -23.136000 0.004000 9.700000
+	S 0 0.000000 4.251000 -0.331000 5.370000 -0.522000
+	END
+REDRAW
+RESET
+MESSAGE
+Les commandes <Grouper> et <Dissocier> (dans le menu Gérer) sont un moyen puissant de manipuler les définitions d'aiguillage et structure.
+
+Nous commencerons par un simple aiguillage et ajouterons une déviation.
+END
+STEP
+COMMAND DrawLine
+PARAMETER draw linewidth 0
+PARAMETER draw linecolor 0
+PARAMETER GROUP draw
+PARAMETER draw linewidth 4
+MOUSE 1 2.500 3.000
+COMMAND DrawLine
+MOUSE 2 2.500 3.000
+MOUSE 4 2.500 1.500
+COMMAND DrawLine
+KEYSTATE 12
+MOUSE 2 3.200 3.000
+KEYSTATE 12
+MOUSE 4 3.200 1.500
+STEP
+COMMAND DrawFilledBox
+PARAMETER draw linecolor 0
+PARAMETER GROUP draw
+MOUSE 1 2.600 3.000
+MOUSE 2 2.600 3.000
+MOUSE 4 3.100 2.500
+MOUSE 2 2.600 2.000
+MOUSE 4 3.100 1.500
+MESSAGE
+_________________________________________
+
+Maintenant que nous avons tracé les grandes lignes d’un aiguillage, nous allons les regrouper avec une définition d'aiguillage.
+
+Nous sélectionnons d'abord les objets dans la nouvelle définition.
+END
+STEP
+COMMAND Select
+MOUSE 1 0.781 3.375
+MOUSE 2 0.781 3.375
+MOUSE 3 8.312 1.312
+MOUSE 4 8.312 1.312
+MESSAGE
+_________________________________________
+
+Et maintenant, appliquez la commande <Groupe>.
+END
+STEP
+PARAMETER misc cmdGroup
+MESSAGE
+_________________________________________
+
+La boîte de dialogue de commande <Grouper> affiche le titre (fabricant, description et numéro de pièce) de la nouvelle définition. Ces informations sont extraites des objets sélectionnés que vous regroupez.
+END
+STEP
+MESSAGE
+_________________________________________
+
+Le commutateur "Remplacer par un nouveau groupe?" remplacera les objets sélectionnés par la nouvelle définition.
+END
+STEP
+PARAMETER group replace 1
+MESSAGE
+_________________________________________
+
+Si nous ne changeons pas le titre, la nouvelle définition remplacera la définition existante.
+
+Nous donnons au groupe une nouvelle description.
+END
+STEP
+PARAMETER group desc M Medium Right
+PARAMETER group desc Modi Medium Right
+PARAMETER group desc Modified Medium Right
+MESSAGE
+_________________________________________
+
+Nous en avons fini avec cette définition. Appuyer sur OK.
+END
+STEP
+PARAMETER group ok
+MESSAGE
+_________________________________________
+
+Vous verrez l'image mise à jour sur la barre de contrôle.
+END
+STEP
+CLEAR
+MESSAGE
+La commande <Dissocier> remplace tous les aiguillages ou structures sélectionnés par leurs pièces.
+
+Les bâtiments et les aiguillages sont composés de lignes, de cercles et d'autres formes. Cet aiguillage comprend deux lignes et deux carrés.
+
+Nous dissocierons cet aiguillage et verrons comment les différentes parties peuvent être modifiées.
+
+Sélectionnez d'abord l'aiguillage, puis dissociez-le.
+
+END
+STEP
+MOUSE 1 7.156 2.094
+MOUSE 2 7.156 2.094
+MOUSE 4 7.156 2.094
+PARAMETER misc cmdUngroup
+MESSAGE
+_________________________________________
+
+Notez que le titre indique maintenant que l'aiguillage est dissocié.
+
+Appuyez sur Echap pour tout désélectionner.
+END
+STEP
+MOUSE 2800 4.094 5.188
+RESET
+MESSAGE
+_________________________________________
+
+Maintenant, sélectionnez les lignes et les carrés.
+END
+STEP
+#KEYSTATE 12
+MOUSE 1 2.469 2.812
+#KEYSTATE 12
+MOUSE 2 2.469 2.812
+KEYSTATE 12
+MOUSE 4 2.469 2.812
+KEYSTATE 12
+MOUSE 2 2.688 2.875
+KEYSTATE 12
+MOUSE 4 2.688 2.875
+KEYSTATE 12
+MOUSE 2 3.188 2.844
+KEYSTATE 12
+MOUSE 4 3.188 2.844
+KEYSTATE 12
+MOUSE 2 2.812 1.656
+KEYSTATE 12
+MOUSE 4 2.812 1.656
+MOUSE 1 5.000 1.000
+MESSAGE
+_________________________________________
+
+Nous pouvons changer cet objet ou en ajouter de nouveaux, cette fois nous allons juste les supprimer.
+END
+STEP
+PARAMETER misc cmdDelete
+MESSAGE
+_________________________________________
+
+Et déplacez l'étiquette hors de la voie.
+END
+STEP
+COMMAND MoveLabel
+MOUSE 1 4.281 2.031
+MOUSE 2 4.281 2.031
+MOUSE 4 4.594 0.844
+ORIG 1.0 0.0 0.0
+MESSAGE
+_________________________________________
+
+Notez que l'aiguillage a été divisé en trois parties.
+END
+STEP
+COMMAND Describe
+MOUSE 1 4.531 2.219
+MOUSE 2 4.531 2.219
+MOUSE 4 4.531 2.219
+BIGPAUSE
+MOUSE 1 6.984 1.812
+MOUSE 2 6.984 1.812
+MOUSE 4 6.984 1.812
+BIGPAUSE
+MOUSE 1 2.359 2.266
+MOUSE 2 2.359 2.266
+MOUSE 4 2.359 2.266
+BIGPAUSE
+#DESCRIBE OK
+PARAMETER describe ok
+RESET
+MESSAGE
+_________________________________________
+
+Deux extrémités de l'aiguillage, du cœur à l'extrémité de la voie divergée et des points à gauche, sont maintenant des sections de voie droites.
+
+Un aiguillage se compose d'un certain nombre de pièces de voies droites et courbes.Cet aiguillage comprend quatre pièces :
+   1. une courte pièce droite, à gauche des lames d'aiguillage.
+   2. une longue pièce droite, à droite des lames d'aiguillage.
+   3. une pièce pliée des lames d'aiguillage vers le cœur, et
+   4. une pièce droite du cœur à la fin de la voie d'embranchement.
+Les premiers et derniers segments ont été convertis en voies droites.
+Les deuxième et troisième segments forment le corps de l'aiguillage et ne peuvent plus être dissociés.
+
+Ensuite, vous pouvez regrouper l'aiguillage avec les sections droites pour restaurer la définition d'aiguillage.Vous pouvez également ajouter d'autres sections de voie aux définitions d'aiguillages.
+
+END
+STEP
+KEYSTATE 2
+MOUSE 2 4.625 1.969
+KEYSTATE 2
+MOUSE 4 4.625 1.969
+REGRESSION START 10 - group 1
+TURNOUT  16 0 32 0 0 DEMO 2 2.477615 1.950213 0 0.000000 "Peco-55	Modified Medium Right	SL-E395F"
+	T4 17 2.478000 2.281250 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	E4 7.530000 2.281250 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	T4 18 6.375762 1.950213 99.704000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	D -0.409808 -1.271732
+	P "P1" 1
+	P "P2" 2
+	S 0 0.000000 0.000385 0.331037 5.052385 0.331037
+	C 0 0.000000 23.136000 -0.001615 -22.804963 0.004000 9.700000
+	END
+STRAIGHT 17 0 0 0 0 DEMO 2
+	E4 2.125000 2.281250 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	T4 16 2.478000 2.281250 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	END
+STRAIGHT 18 0 0 0 0 DEMO 2
+	T4 16 6.376000 1.950250 279.686360 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	E4 7.495000 1.759250 99.686360 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	END
+REGRESSION END
+PARAMETER misc cmdDelete
+ORIG 1.0 0.0 0.0
+CLEAR
+MESSAGE
+Maintenant, créez une voie et placez le nouvel aiguillage dessus.
+END
+STEP
+COMMAND Straight
+MOUSE 1 0.281 0.688
+MOUSE 2 0.281 0.688
+MOUSE 3 11.156 4.281
+MOUSE 4 11.156 4.281
+BIGPAUSE
+COMMAND TurnoutHotBar
+#PARAMETER turnout list 0 
+PARAMETER GROUP turnout
+HOTBARSELECT Peco-55	Modified Medium Right	SL-E395F
+MOUSE 1 4.750 1.906
+MOUSE 2 4.750 1.906
+MOUSE 4 4.750 1.906
+MOUSE 8200 4.750 1.906
+MESSAGE
+_________________________________________
+
+Supposons que nous voulions remplacer les carrés noirs par des cercles verts.
+
+Nous sélectionnons d'abord l'aiguillage.
+END
+STEP
+COMMAND Select
+MOUSE 1 6.062 2.906
+MOUSE 2 6.062 2.906
+MOUSE 4 6.062 2.906
+MESSAGE
+Et maintenant, dissociez-le (à partir du menu Gérer)
+END
+STEP
+PARAMETER misc cmdUngroup
+MESSAGE
+_________________________________________
+
+Notez que le nom a changé pour indiquer que l'aiguillage a été dissocié.
+END
+STEP
+MESSAGE
+_________________________________________
+
+Maintenant, appuyez sur 'Ech' pour tout désélectionner, puis sélectionnez et supprimez les 2 carrés.
+END
+STEP
+MOUSE 2800 6.062 2.906
+RESET
+BIGPAUSE
+MOUSE 1 5.219 3.000
+MOUSE 2 5.219 3.000
+MOUSE 4 5.219 3.000
+KEYSTATE 12
+MOUSE 2 5.219 2.000
+KEYSTATE 12
+MOUSE 4 5.219 2.000
+PARAMETER misc cmdDelete
+MESSAGE
+_________________________________________
+
+Maintenant, dessinez les cercles verts…
+END
+STEP
+ORIG 1.0 0.0 0.0
+COMMAND DrawFilledCircleTangent
+PARAMETER draw linecolor 0
+PARAMETER GROUP draw
+PARAMETER draw linecolor 65280
+MOUSE 1 5.203 2.812
+MOUSE 2 5.203 2.812
+MOUSE 3 5.359 2.609
+MOUSE 4 5.359 2.609
+PARAMETER GROUP draw
+MOUSE 1 5.516 1.891
+MOUSE 2 5.516 1.891
+MOUSE 3 5.672 1.719
+MOUSE 4 5.672 1.719
+PARAMETER GROUP draw
+MESSAGE
+et Groupez la nouvelle définition.
+END
+STEP
+ORIG 1.0 0.0 0.0
+COMMAND Select
+KEYSTATE 12
+MOUSE 1 3.719 4.156
+KEYSTATE 12
+MOUSE 2 3.719 4.156
+KEYSTATE 12
+MOUSE 3 10.531 0.969
+KEYSTATE 12
+MOUSE 4 10.531 0.969
+BIGPAUSE
+PARAMETER misc cmdGroup
+PARAMETER group replace 1
+BIGPAUSE
+PARAMETER group ok
+MESSAGE
+_________________________________________
+
+Notez que l'aiguillage dans la barre d'objets est le même que celui du plan.Assurez-vous que votre nouvelle définition est alignée comme vous le souhaitez.
+END
+STEP
+KEYSTATE 2
+MOUSE 2 5.000 2.188
+KEYSTATE 2
+MOUSE 4 5.000 2.188
+REGRESSION START 10 - group 2
+STRAIGHT 19 0 0 0 0 DEMO 2
+	E4 0.281000 0.688000 251.716920 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	T4 32 4.672994 2.139075 71.716920 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	END
+STRAIGHT 20 0 0 0 0 DEMO 2
+	T4 32 9.805140 3.834688 251.716920 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	E4 11.156000 4.281000 71.716920 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	END
+TURNOUT  32 0 0 0 0 DEMO 2 4.672994 2.139075 0 0.000000 "Peco-55	Modified Medium Right	SL-E395F"
+	T4 19 4.672994 2.139075 251.716920 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	T4 20 9.805140 3.834688 71.716920 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	E4 9.935665 3.328060 81.403280 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	D 0.000000 0.000000
+	P "P0" 1 3
+	P "P1" 4 2 3
+	L3 0 0.055556 0.130589 0.800108 0 0.601157 -0.624169 0
+	L3 0 0.055556 0.795251 1.019707 0 1.265820 -0.404571 0
+	S 0 0.000000 5.132146 1.695614 0.335180 0.110740
+	C 0 0.000000 -23.136000 7.591323 -21.857939 341.720920 9.700000
+	S 0 0.000000 0.335180 0.110740 0.000000 0.000000
+	S 0 0.000000 5.262670 1.188985 4.140240 1.019299
+	G3 65280 0.000000 0.256018 0.530006 0.672925 0
+	G3 65280 0.000000 0.232207 0.843006 -0.248075 0
+	END
+REGRESSION END
+PARAMETER misc cmdDelete
+CLEAR
+RESET
+MESSAGE
+Nous pouvons également créer des aiguillages à partir de simples voies droites et courbes.
+
+Nous créons deux voies avec un point de fin commun.
+END
+STEP
+COMMAND Straight
+MOUSE 1 2.000 2.000
+MOUSE 2 2.000 2.000
+MOUSE 3 10.000 2.000
+MOUSE 4 10.000 2.000
+MESSAGE
+
+Lorsque nous créons la courbe à partir du point de fin de la voie droite,nous devons maintenir la touche Maj enfoncée pour empêcher XTrckCAD d'essayer de joindre les deux voies.
+END
+COMMAND CurveEndPt
+MOUSE 1 2.000 2.000
+KEYSTATE 12
+MOUSE 2 2.000 2.000
+KEYSTATE 12
+MOUSE 3 9.000 2.000
+KEYSTATE 12
+MOUSE 4 9.000 2.000
+KEYSTATE 12
+MOUSE 2 9.000 2.000
+KEYSTATE 12
+MOUSE 3 8.875 3.062
+KEYSTATE 12
+MOUSE 4 8.875 3.062
+MESSAGE
+_________________________________________
+
+À ce stade, nous pouvons modifier les voies si nécessaire.
+
+Nous utiliserons la commande <Propriétés> pour changer les propriétés des voies.
+END
+STEP
+COMMAND Describe
+MOUSE 1 9.438 2.000
+MOUSE 2 9.438 2.000
+MOUSE 4 9.438 2.000
+MESSAGE
+_________________________________________
+
+Nous avons réglé la longueur à 7,5".
+
+Lorsque nous modifions la longueur, chaque extrémité est poussée pour raccourcir la voie, nous souhaitons que seule l'extrémité correcte soit déplacée.Pour contrôler cela, réglez le pivot sur la Premiere. Cela signifie que l'extrémité gauche reste inchangée si nous changeons la longueur (ou l'angle) de la voie.
+END
+STEP
+#DESCRIBE Pivot	0
+PARAMETER describe P1 0
+MESSAGE
+_________________________________________
+
+Maintenant, lorsque vous modifiez la longueur, seul le point final droit se déplace.
+END
+STEP
+#DESCRIBE Length	7.500
+PARAMETER describe F7 7.500
+#DESCRIBE OK
+PARAMETER describe ok
+RESET
+MESSAGE
+_________________________________________
+
+Regardons maintenant la voie incurvée.
+END
+STEP
+COMMAND Describe
+MOUSE 1 7.688 2.625
+MOUSE 2 7.688 2.625
+MOUSE 4 7.688 2.625
+MESSAGE
+_________________________________________
+
+Voici le point d'extrémité gauche que nous ne voulons pas déplacer, il est le deuxième point d'extrémité. Nous allons donc en faire un point fixe comme pivot.
+END
+STEP
+#DESCRIBE Pivot	2
+PARAMETER describe P1 2
+MESSAGE
+_________________________________________
+
+Nous voulons que la courbe ait un rayon de 20" et un angle de 17,5°.
+Tout d'abord changer le rayon …
+END
+STEP
+#DESCRIBE Radius	20.000
+PARAMETER describe F9 20.000000
+MESSAGE
+et la longueur angulaire.
+END
+STEP
+PARAMETER describe F11 17.5
+BIGPAUSE
+#DESCRIBE OK
+PARAMETER describe ok
+MESSAGE
+_________________________________________
+
+Maintenant, sélectionnez les deux voies…
+END
+STEP
+COMMAND Select
+MOUSE 1 7.500 2.750
+MOUSE 2 7.500 2.750
+MOUSE 4 7.500 2.750
+KEYSTATE 12
+MOUSE 1 8.000 2.000
+KEYSTATE 12
+MOUSE 2 8.000 2.000
+KEYSTATE 12
+MOUSE 4 8.000 2.000
+MESSAGE
+et groupez les.
+END
+PARAMETER group manuf 
+PARAMETER group desc 
+PARAMETER group partno 
+STEP
+PARAMETER misc cmdGroup
+PARAMETER group manuf Custom
+PARAMETER group desc Left
+PARAMETER group partno 99-L
+MESSAGE
+_________________________________________
+
+Si les deux voies ont une extrémité commune, vous obtiendrez un aiguillage qui peut être contrôlé en mode de fonctionnement. Sinon, il s'agira simplement de deux voies groupées.
+END
+STEP
+PARAMETER group ok
+MESSAGE
+_________________________________________
+
+Nous avons créé un aiguillage gauche et nous voulons également une version à droite.
+
+Nous utilisons la commande <miroir>.
+END
+STEP
+COMMAND Select
+MOUSE 1 7.812 2.250
+MOUSE 2 7.812 2.250
+MOUSE 4 7.812 2.250
+COMMAND Flip
+MESSAGE
+_________________________________________
+
+Faites glisser une voie horizontale qui sera l'axe de miroir de la commande <Flip>.
+END
+STEP
+MOUSE 1 1.438 1.938
+MOUSE 2 1.438 1.938
+MOUSE 3 11.625 1.938
+MOUSE 4 11.625 1.938
+MESSAGE
+_________________________________________
+
+Notez que le titre a été changé en "Gauche en miroir".
+
+Maintenant, regroupez l'aiguillage.
+END
+STEP
+PARAMETER misc cmdGroup
+MESSAGE
+_________________________________________
+
+Nous allons changer le titre et le numéro de pièce pour la nouvelle définition.
+END
+STEP
+PARAMETER group desc Right
+PARAMETER group partno 99-
+PARAMETER group partno 99-R
+PARAMETER group replace 1
+PARAMETER group ok
+STEP
+CLEAR
+MESSAGE
+Pour supprimer des définitions, utilisez le "Eléments définis sur mesure" dans le menu "Gérer".
+END
+STEP
+PARAMETER misc cmdCustmgm
+MESSAGE
+_________________________________________
+
+Sélectionnez les définitions que vous avez ajoutées et supprimez-les.
+END
+STEP
+PARAMETER custmgm inx 0 	Peco-55	DEMO	SL-E395F	Modified Medium Right
+PARAMETER custmgm delete
+PARAMETER custmgm inx 0 	Custom	DEMO	99-L	Left
+PARAMETER custmgm delete
+PARAMETER custmgm inx 0 	Custom	DEMO	99-R	Right
+PARAMETER custmgm delete
+PARAMETER custmgm ok
+MESSAGE
+=========================================
+END
+STEP
+REGRESSION START 10 - group 3
+TURNOUT  36 0 0 0 0 DEMO 2 2.000000 1.876000 0 0.000000 "Custom	Right	99-R"
+	E4 2.000000 1.876000 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	E4 9.500000 1.876000 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	E4 8.014116 0.950339 107.500000 0 0.0 0.0 0.0 0.0 0 0 0 0.000000 
+	D 0.000000 0.000000
+	P "P0" 1
+	P "P1" 2
+	S 0 0.000000 0.000000 0.000000 7.500000 -0.000000
+	C 0 0.000000 20.000000 -0.000000 -20.000000 0.000000 17.500000
+	END
+REGRESSION END
+CLEAR

@@ -1,0 +1,48 @@
+VERSION 7
+DEMOINIT
+ORIG 8.000 0.000 0.000
+REDRAW
+RESET
+MESSAGE
+La démo simule également la saisie de valeurs et la sélection d'options dans diverses boîtes de dialogue.
+
+Ceci est simulé en dessinant un rectangle autour du champ de saisie lors de la saisie ou de la modification de valeurs.
+END
+STEP
+PARAMETER misc cmdDisplay
+MESSAGE
+_________________________________________
+
+Ici, nous apportons des modifications dans la boîte de dialogue d'affichage.Remarquez comment cela est simulé.D'abord, nous paramétrons «Dessiner un tunnel» sur «Normal».
+END
+STEP
+PARAMETER display tunnels 2
+MESSAGE
+Maintenant, nous changeons 'Taille de la police de l'étiquette' en «56».
+END
+STEP
+PARAMETER display description-fontsize 56
+MESSAGE
+Nous allons changer quelques autres options.
+END
+STEP
+PAUSE 500
+PARAMETER display layoutlabels 4
+PAUSE 500
+PARAMETER display layoutlabels 0
+PAUSE 500
+PARAMETER display mapscale 50
+PAUSE 500
+PARAMETER display carhotbarlabels 4 Manuf/Proto
+MESSAGE
+_________________________________________
+
+Cet effet n'est utilisé qu'en mode démonstration. Pendant le fonctionnement,normal, vous ne le verrez pas.
+END
+STEP
+PARAMETER display cancel
+MESSAGE
+=========================================
+END
+STEP
+CLEAR

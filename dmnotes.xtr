@@ -1,0 +1,45 @@
+VERSION 2
+DEMOINIT
+ORIG 8.000 0.000 0.000
+REDRAW
+RESET
+MESSAGE
+La commande <Remarque> permet de placer des notes à différents points du plan de tracé.
+END
+STEP
+COMMAND TextNote
+MOUSE 2 15.167 7.833
+MOUSE 3 9.917 7.167
+MOUSE 4 9.917 7.167
+MESSAGE
+_________________________________________
+
+Lorsque vous créez une note, l'éditeur de notes s'ouvre, ce qui vous permet de saisir un texte.
+END
+STEP
+RESET
+MOUSE 6920 9.917 7.167
+MESSAGE
+_________________________________________
+
+Si vous cliquez sur une note en mode <Describe>, l'éditeur apparaît.
+END
+STEP
+COMMAND Describe
+MOUSE 2 9.917 7.167
+MOUSE 4 9.917 7.167
+STEP
+MOUSE 6920 9.917 7.167
+REGRESSION START 10 - notes
+NOTE 1 0 0 0 9.917000 7.167000 0 32
+Replace this text with your note
+    END
+REGRESSION END
+CLEAR
+MESSAGE
+C'est la fin des démos XTrackCAD.Cliquez sur Pas à Pas pour revenir à XTrackCAD.
+Merci d'avoir regardé.
+=========================================
+END
+STEP
+CLEAR

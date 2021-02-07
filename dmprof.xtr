@@ -1,0 +1,448 @@
+VERSION 7
+DEMOINIT
+ORIG 9.000 23.000 2.000
+PARAMETER display description-fontsize 96
+PARAMETER display labelenable 4
+PARAMETER display labelscale 12
+CURVE 1 0 0 0 0 DEMO 2 12.666667 13.666667 10.000000
+	T 3 11.809617 3.703461 94.916566
+	T 21 22.410419 15.915955 167.001307
+	END
+STRAIGHT 2 0 0 0 0 DEMO 2
+	T 22 27.376540 8.227390 232.674480 10 1.103460 -0.387390
+	T 6 29.448408 9.807189 52.674480
+	END
+CURVE 3 0 0 0 0 DEMO 2 13.737465 26.114701 22.494005
+	T 22 24.278245 6.243309 62.056285 11 0.401755 -0.563309
+	T 1 11.809617 3.703461 274.916566
+	END
+STRAIGHT 4 0 0 0 0 DEMO 2
+	T 5 37.111111 4.222222 270.000000
+	T 9 38.222222 4.222222 90.000000 9 0.001462 -0.748538 0.500000
+	END
+CURVE 5 0 0 0 0 DEMO 2 37.111111 19.309524 15.087302
+	T 4 37.111111 4.222222 90.000000
+	T 21 26.521963 8.562588 314.576286 10 -1.201963 -0.162588
+	END
+TURNOUT  6 0 0 0 0 DEMO 2 29.448408 9.807189 322.674480 "Peco-55	Medium Right	SL-E395F"
+	T 2 29.448408 9.807189 232.674480
+	T 7 33.746482 13.084471 52.674480
+	T 8 34.035161 12.648152 62.360480
+	D 0.000000 0.000000
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 23.136000 0.351000 -23.136000 0.004000 9.700000
+	S 0 0.000000 4.251000 -0.331000 5.370000 -0.522000
+	END
+STRAIGHT 7 0 0 0 0 DEMO 2
+	T 19 42.270123 19.583746 52.674480
+	T 6 33.746482 13.084471 232.674480
+	END
+CURVE 8 0 0 0 0 DEMO 2 45.574853 -9.388207 24.875000
+	T 6 34.035161 12.648152 242.360480
+	T 18 51.462480 14.779984 103.691177
+	END
+TURNOUT  9 0 0 0 0 DEMO 2 38.222222 4.222222 0.000000 "Peco-55	Medium Left	SL-E396F"
+	T 4 38.222222 4.222222 270.000000 9 0.000000 0.000000 0.500000
+	T 15 43.627222 4.222222 90.000000
+	T 13 43.592222 4.744222 80.314000
+	D 0.000000 0.000000
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 -23.136000 0.351000 23.136000 170.297000 9.700000
+	S 0 0.000000 4.251000 0.331000 5.370000 0.522000
+	END
+STRAIGHT 10 0 0 0 0 DEMO 2
+	E 76.446137 4.222222 90.000000
+	T 14 72.333333 4.222222 270.000000 9 -0.017544 -0.722222 1.000000
+	END
+STRAIGHT 11 0 0 0 0 DEMO 2
+	T 23 55.000000 5.472222 270.000000 13 -0.040000 0.647778 "New York City"
+	T 16 60.777778 5.472222 90.000000
+	END
+CURVE 12 0 0 0 0 DEMO 2 49.777778 -17.192082 22.664304
+	T 13 45.964542 5.149134 260.314000
+	T 23 49.777778 5.472222 90.000000
+	END
+STRAIGHT 13 0 0 0 0 DEMO 2
+	T 9 43.592222 4.744222 260.314000
+	T 12 45.964542 5.149134 80.314000
+	END
+TURNOUT  14 0 0 0 0 DEMO 2 72.333333 4.222222 180.000000 "Peco-55	Medium Right	SL-E395F"
+	T 10 72.333333 4.222222 90.000000 9 0.000000 0.000000 1.000000
+	T 15 66.928333 4.222222 270.000000
+	T 17 66.963333 4.744222 279.686000
+	D 0.000000 0.000000
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 23.136000 0.351000 -23.136000 0.004000 9.700000
+	S 0 0.000000 4.251000 -0.331000 5.370000 -0.522000
+	END
+STRAIGHT 15 0 0 0 0 DEMO 2
+	T 9 43.627222 4.222222 270.000000
+	T 14 66.928333 4.222222 90.000000
+	END
+CURVE 16 0 0 0 0 DEMO 2 60.777778 -17.192082 22.664304
+	T 11 60.777778 5.472222 270.000000
+	T 17 64.591013 5.149134 99.686000
+	END
+STRAIGHT 17 0 0 0 0 DEMO 2
+	T 14 66.963333 4.744222 99.686000
+	T 16 64.591013 5.149134 279.686000
+	END
+CURVE 18 0 0 0 0 DEMO 2 64.332420 67.609950 54.375000
+	E 74.352464 14.166154 79.381036 9 -0.128780 -0.718786 2.000000
+	T 8 51.462480 14.779984 283.691177
+	END
+CURVE 19 0 0 0 0 DEMO 2 49.773613 9.743103 12.375000
+	T 7 42.270123 19.583746 232.674480
+	T 20 56.175027 20.333784 121.150374
+	END
+CURVE 20 0 0 0 0 DEMO 2 64.968888 34.882599 17.000000
+	E 74.032528 20.500303 57.781104 9 0.099051 -0.789777 4.000000
+	T 19 56.175027 20.333784 301.150374
+	END
+CURVE 21 0 0 0 0 DEMO 2 37.111111 19.309524 15.087302
+	T 5 26.521963 8.562588 134.576286 10 0.000000 0.000000
+	T 1 22.410418 15.915955 347.001307
+	END
+CURVE 22 0 0 0 0 DEMO 2 13.737465 26.114701 22.494005
+	T 2 27.376540 8.227390 52.674480 10 0.000000 0.000000
+	T 3 24.278245 6.243309 242.056285 11 0.000000 0.000000
+	END
+STRAIGHT 23 0 0 0 0 DEMO 2
+	T 12 49.777778 5.472222 270.000000
+	T 11 55.000000 5.472222 90.000000 13 0.000000 0.000000 "New York City"
+	END
+REDRAW
+RESET
+COMMAND Profile
+MESSAGE
+Pour utiliser la commande <Profil>, vous devez d'abord définir des élévations sur votre plan.
+
+Dans cet exemple, nous utiliserons les élévations définies dans le dernier exemple.
+
+La fenêtre du profil d'élévation peut maintenant être agrandie.
+END
+STEP
+#PARAMETER action profile-setpath 0
+MESSAGE
+_________________________________________
+
+Pour afficher le profil d'élévation, vous devez sélectionner un itinéraire sur votre plan.
+
+Sélectionnez un point d'élévation défini (marqué par des points dorés).
+
+Nous commençons à l'extrémité droite de la voie d'évitement.
+END
+STEP
+#ORIG 4.000 70.000 3.000
+MOUSE 2 72.347 4.227
+MOUSE 4 72.347 4.227
+MESSAGE
+_________________________________________
+
+Le deuxième point est à l'extrémité gauche du revêtement. Le chemin sera indiqué en violet sur le plan.
+END
+STEP
+#ORIG 4.000 36.000 3.000
+MOUSE 2 38.240 4.200
+MOUSE 4 38.240 4.200
+#ORIG 4.000 72.000 13.000
+BIGPAUSE
+#ORIG 8.000 25.000 3.000
+MESSAGE
+_________________________________________
+
+Maintenant, sélectionnez le bout d'une des branches.
+
+END
+STEP
+MOUSE 2 73.63 20.25
+MOUSE 4 73.63 20.25
+MESSAGE
+_________________________________________
+
+Le profil d'élévation est dessiné en rouge. Cela signifie qu'il existe des aiguillages sur cette section du chemin d'accès qui ont plus de 2 connexions.
+
+La pente de cette partie du chemin est une valeur moyenne et peut être influencée par d'autres élévations telles que l'extrémité de la branche inférieure.
+
+END
+STEP
+MESSAGE
+_________________________________________
+
+Essayez maintenant de sélectionner le point de fin de l'autre branche.
+Vous recevrez un message d'erreur car il n'y a pas de route vers l'un des points de fin du chemin existant.
+END
+STEP
+MOUSE 2 74.0 14.0
+MOUSE 4 74.0 14.0
+MESSAGE
+_________________________________________
+
+Dans ce cas, supprimez la dernière partie du chemin en cliquant sur l'extrémité actuelle du chemin et sélectionnez à nouveau le point de fin.
+END
+STEP
+MOUSE 2 73.63 20.25
+MOUSE 4 73.63 20.25
+BIGPAUSE
+MOUSE 2 74.0 14.0
+MOUSE 4 74.0 14.0
+MESSAGE
+_________________________________________
+
+Notez que la pente a changé dans le profil d'élévation.
+END
+STEP
+#ORIG 4 30 11
+MESSAGE
+_________________________________________
+
+Vous pouvez ignorer les points de fin sur le tracé en utilisant Maj+clic droit. Dans les options du profil d'élévation, choisissez "Ignorer".
+
+Remarque : nous ne pouvons pas afficher le menu en mode démo, mais nous montrerons l'effet d'un Maj+clic droit avec la sélection 'ignorer'. Nous ignorerons le point de fin de l'aiguillage qui ne se trouve pas sur le chemin.
+END
+STEP
+BIGPAUSE
+#PARAMETER action profile-setpath 1
+#MOUSE 1 33.789 13.158
+MENU 33.789 13.158 "Profile Mode" "Ignore"
+MESSAGE
+_________________________________________
+
+Notez qu'une partie de la ligne de profil d'élévation est redessinée en bleu.
+En outre, les calculs de marqueurs d'élévations et de niveaux situés à droite du plan ont été mis à jour.
+END
+STEP
+#ORIG 4 48 12
+MESSAGE
+_________________________________________
+
+Vous pouvez définir des points d'élévation supplémentaires à l'aide du menu contextuel Elévation. S'ils se trouvent sur le chemin, ces points sont ajoutés au profil.
+
+Pour ce faire, cliquez sur le bouton droit de la souris pour afficher le menu contextuel "Elévation" et sélectionnez l'élément de voie puis "Défini"(e).
+END
+STEP
+#MOUSE 1 51.526 14.737
+MENU 51.526 14.737 "Profile Mode" "Define"
+#MOUSE 2 51.526 14.737
+#MOUSE 4 51.526 14.737
+MESSAGE
+_________________________________________
+
+Nous venons d'ajouter un point d'élévation définie au milieu de la branche inférieure. Notez l'ajout dans la boîte de dialogue Profil.
+=========================================
+END
+STEP
+CLEAR
+#ORIG 4 40 2
+MESSAGE
+Pour le revêtement, on a attribué un nom de station. Ce n'est pas sur le chemin car un chemin utilise toujours le chemin le plus court entre les points.
+
+En ignorant l'un des points d'extrémité d'un aiguillage, nous pouvons forcer le chemin à emprunter l'autre route.
+
+Encore une fois, nous utilisons Maj-Clic-Droit pour afficher les options du menu profil puis sélectionner Ignorer.
+END
+STEP
+#MOUSE 1 43.737 4.158
+MENU 43.737 4.158 "Profile Mode" "Ignore"
+BIGPAUSE
+#ORIG 4 70 2
+MESSAGE
+_________________________________________
+
+Maintenant, supprimez la première section du chemin,
+END
+STEP
+#PARAMETER action profile-setpath 0
+MOUSE 2 72.211 4.316
+MOUSE 4 72.211 4.316
+BIGPAUSE
+MESSAGE
+
+et resélectionnez-le.
+END
+STEP
+MOUSE 2 72.368 4.158
+MOUSE 4 72.368 4.158
+BIGPAUSE
+#ORIG 8 24 2
+MESSAGE
+_________________________________________
+
+Maintenant, le chemin passe par le point de fin de la station et le nom apparaît dans la boîte de dialogue du profil d'élévation.
+=========================================
+END
+STEP
+CLEAR
+ORIG 2 20 5
+MESSAGE
+Nous devons maintenant augmenter la distance qui sépare les voies.
+
+Les deux élévations que vous voyez ici sont des élévations calculées, ce qui signifie que XTrackCAD exécute dynamiquement le calcul d'élévation en fonction des voies connectées.
+
+Tout d'abord marquer l'extrémité inférieure. Pour ce faire, cliquez avec le bouton droit de la souris sur le menu d’options du profil de hauteur (Modifier>Profil). Vous verrez que l'extrémité choisie est maintenant marqué "d'un point doré. Le profil de hauteur a été ajouté une nouvelle voie.
+END
+STEP
+#PARAMETER action profile-setpath 1
+#MOUSE 1 26.421 8.684
+MENU 26.421 8.684 "Profile Mode" "Define"
+MESSAGE
+_________________________________________
+
+Maintenant, faites glisser le point dans la boîte de dialogue 'Profil' pour modifier l’élévation.
+
+Notez que la pente de chaque côté du point apparaîtra en bas de la boîte de dialogue Profil.
+END
+STEP
+PARAMETER profile canvas 2 48.028 0.733
+PAUSE 100
+PARAMETER profile canvas 3 48.028 0.70
+PAUSE 100
+PARAMETER profile canvas 3 48.028 0.67
+PAUSE 100
+PARAMETER profile canvas 3 48.028 0.63
+PAUSE 100
+PARAMETER profile canvas 3 48.028 0.60
+PAUSE 100
+PARAMETER profile canvas 3 48.028 0.57
+PAUSE 100
+PARAMETER profile canvas 3 48.028 0.53
+PAUSE 100
+MESSAGE
+_________________________________________
+
+Après validation le profil affiche les nouvelles élévations et angles.
+END
+PARAMETER profile canvas 4 48.028 0.50
+BIGPAUSE
+MESSAGE
+=========================================
+END
+STEP
+REGRESSION START 10 - profile
+CURVE 1 0 0 0 0 DEMO 2 12.666667 13.666667 0 10.000000 0 0.000000 0.000000
+	T4 3 11.809617 3.703461 94.916566 0 0.0 0.0 0.0 0.0 0 0 0 0.896923 
+	T4 21 22.410419 15.915955 167.001307 0 0.0 0.0 0.0 0.0 0 0 0 0.896923 
+	END
+STRAIGHT 2 0 0 0 0 DEMO 2
+	T4 22 27.376540 8.227390 232.674480 10 1.103460 -0.387390 0.0 0.0 1 2 0 1.415360 
+	T4 6 29.448408 9.807189 52.674480 0 0.0 0.0 0.0 0.0 0 0 0 1.415360 
+	END
+CURVE 3 0 0 0 0 DEMO 2 13.737465 26.114701 0 22.494005 0 0.000000 0.000000
+	T4 22 24.278245 6.243309 62.056285 11 0.401755 -0.563309 0.0 0.0 1 3 0 1.266708 
+	T4 1 11.809617 3.703461 274.916566 0 0.0 0.0 0.0 0.0 0 0 0 1.266708 
+	END
+STRAIGHT 4 0 0 0 0 DEMO 2
+	T4 5 37.111111 4.222222 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.500000 
+	T4 9 38.222222 4.222222 90.000000 9 0.001462 -0.748538 0.500000 0.500000 1 1 0 0.500000 
+	END
+CURVE 5 0 0 0 0 DEMO 2 37.111111 19.309524 0 15.087302 0 0.000000 0.000000
+	T4 4 37.111111 4.222222 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.500000 
+	T4 21 26.521963 8.562588 314.576286 9 -1.201963 -0.162588 0.500000 0.500000 1 1 0 0.500000 
+	END
+TURNOUT  6 0 0 0 0 DEMO 2 29.448408 9.807189 0 322.674480 "Peco-55	Medium Right	SL-E395F"
+	T4 2 29.448408 9.807189 232.674480 0 0.0 0.0 0.0 0.0 0 0 0 1.467439 
+	T4 7 33.746482 13.084471 52.674480 12 0.000000 0.000000 0.0 0.0 1 4 0 1.467439 
+	T4 8 34.035161 12.648152 62.360480 0 0.0 0.0 0.0 0.0 0 0 0 1.467439 
+	D 0.000000 0.000000
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 23.136000 0.351000 -23.136000 0.004000 9.700000
+	S 0 0.000000 4.251000 -0.331000 5.370000 -0.522000
+	END
+STRAIGHT 7 0 0 0 0 DEMO 2
+	T4 19 42.270123 19.583746 52.674480 0 0.0 0.0 0.0 0.0 0 0 0 1.922697 
+	T4 6 33.746482 13.084471 232.674480 12 0.000000 0.000000 0.0 0.0 1 4 0 1.922697 
+	END
+CURVE 8 0 0 0 0 DEMO 2 45.574853 -9.388207 0 24.875000 0 0.000000 0.000000
+	T4 6 34.035161 12.648152 242.360480 0 0.0 0.0 0.0 0.0 0 0 0 1.619204 
+	T4 18 51.462480 14.779984 103.691177 9 0.000000 0.000000 1.735822 1.735822 1 1 0 1.619204 
+	END
+TURNOUT  9 0 0 0 0 DEMO 2 38.222222 4.222222 0 0.000000 "Peco-55	Medium Left	SL-E396F"
+	T4 4 38.222222 4.222222 270.000000 9 0.000000 0.000000 0.500000 0.500000 1 1 0 0.552670 
+	T4 15 43.627222 4.222222 90.000000 12 0.000000 0.000000 0.0 0.0 1 4 0 0.552670 
+	T4 13 43.592222 4.744222 80.314000 0 0.0 0.0 0.0 0.0 0 0 0 0.552670 
+	D 0.000000 0.000000
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 -23.136000 0.351000 23.136000 170.297000 9.700000
+	S 0 0.000000 4.251000 0.331000 5.370000 0.522000
+	END
+STRAIGHT 10 0 0 0 0 DEMO 2
+	E4 76.446137 4.222222 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 1.000000 
+	T4 14 72.333333 4.222222 270.000000 9 -0.017544 -0.722222 1.000000 1.000000 1 1 0 1.000000 
+	END
+STRAIGHT 11 0 0 0 0 DEMO 2
+	T4 23 55.000000 5.472222 270.000000 13 -0.040000 0.647778 "New York City" 0.0 1 5 0 0.788168 
+	T4 16 60.777778 5.472222 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.788168 
+	END
+CURVE 12 0 0 0 0 DEMO 2 49.777778 -17.192082 0 22.664304 0 0.000000 0.000000
+	T4 13 45.964542 5.149134 260.314000 0 0.0 0.0 0.0 0.0 0 0 0 0.642059 
+	T4 23 49.777778 5.472222 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.642059 
+	END
+STRAIGHT 13 0 0 0 0 DEMO 2
+	T4 9 43.592222 4.744222 260.314000 0 0.0 0.0 0.0 0.0 0 0 0 0.596609 
+	T4 12 45.964542 5.149134 80.314000 0 0.0 0.0 0.0 0.0 0 0 0 0.596609 
+	END
+TURNOUT  14 0 0 0 0 DEMO 2 72.333333 4.222222 0 180.000000 "Peco-55	Medium Right	SL-E395F"
+	T4 10 72.333333 4.222222 90.000000 9 0.000000 0.000000 1.000000 1.000000 1 1 0 0.947570 
+	T4 15 66.928333 4.222222 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.947570 
+	T4 17 66.963333 4.744222 279.686000 0 0.0 0.0 0.0 0.0 0 0 0 0.947570 
+	D 0.000000 0.000000
+	P "Normal" 1 2
+	P "Reverse" 1 3 4
+	S 0 0.000000 0.000000 0.000000 0.353000 0.000000
+	S 0 0.000000 0.353000 0.000000 5.405000 0.000000
+	C 0 0.000000 23.136000 0.351000 -23.136000 0.004000 9.700000
+	S 0 0.000000 4.251000 -0.331000 5.370000 -0.522000
+	END
+STRAIGHT 15 0 0 0 0 DEMO 2
+	T4 9 43.627222 4.222222 270.000000 12 0.000000 0.000000 0.0 0.0 1 4 0 0.750120 
+	T4 14 66.928333 4.222222 90.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.750120 
+	END
+CURVE 16 0 0 0 0 DEMO 2 60.777778 -17.192082 0 22.664304 0 0.000000 0.000000
+	T4 11 60.777778 5.472222 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.858180 
+	T4 17 64.591013 5.149134 99.686000 0 0.0 0.0 0.0 0.0 0 0 0 0.858180 
+	END
+STRAIGHT 17 0 0 0 0 DEMO 2
+	T4 14 66.963333 4.744222 99.686000 0 0.0 0.0 0.0 0.0 0 0 0 0.903630 
+	T4 16 64.591013 5.149134 279.686000 0 0.0 0.0 0.0 0.0 0 0 0 0.903630 
+	END
+CURVE 18 0 0 0 0 DEMO 2 64.332420 67.609950 0 54.375000 0 0.000000 0.000000
+	E4 74.352464 14.166154 79.381036 9 -0.128780 -0.718786 2.000000 2.000000 1 1 0 1.867911 
+	T4 8 51.462480 14.779984 283.691177 9 0.000000 0.000000 1.735822 1.735822 1 1 0 1.867911 
+	END
+CURVE 19 0 0 0 0 DEMO 2 49.773613 9.743103 0 12.375000 0 0.000000 0.000000
+	T4 7 42.270123 19.583746 232.674480 0 0.0 0.0 0.0 0.0 0 0 0 2.605178 
+	T4 20 56.175027 20.333784 121.150374 0 0.0 0.0 0.0 0.0 0 0 0 2.605178 
+	END
+CURVE 20 0 0 0 0 DEMO 2 64.968888 34.882599 0 17.000000 0 0.000000 0.000000
+	E4 74.032528 20.500303 57.781104 9 0.099051 -0.789777 4.000000 4.000000 1 1 0 3.456904 
+	T4 19 56.175027 20.333784 301.150374 0 0.0 0.0 0.0 0.0 0 0 0 3.456904 
+	END
+CURVE 21 0 0 0 0 DEMO 2 37.111111 19.309524 0 15.087302 0 0.000000 0.000000
+	T4 5 26.521963 8.562588 134.576286 9 0.000000 0.000000 0.500000 0.500000 1 1 0 0.555491 
+	T4 1 22.410418 15.915955 347.001307 0 0.0 0.0 0.0 0.0 0 0 0 0.555491 
+	END
+CURVE 22 0 0 0 0 DEMO 2 13.737465 26.114701 0 22.494005 0 0.000000 0.000000
+	T4 2 27.376540 8.227390 52.674480 10 0.000000 0.000000 0.0 0.0 1 2 0 1.374489 
+	T4 3 24.278245 6.243309 242.056285 11 0.000000 0.000000 0.0 0.0 1 3 0 1.374489 
+	END
+STRAIGHT 23 0 0 0 0 DEMO 2
+	T4 12 49.777778 5.472222 270.000000 0 0.0 0.0 0.0 0.0 0 0 0 0.708023 
+	T4 11 55.000000 5.472222 90.000000 13 0.000000 0.000000 "New York City" 0.0 1 5 0 0.708023 
+	END
+REGRESSION END
+CLEAR

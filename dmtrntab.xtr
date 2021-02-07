@@ -1,0 +1,30 @@
+VERSION 2
+DEMOINIT
+ORIG 8.000 0.000 0.000
+REDRAW
+RESET
+MESSAGE
+Lors de la création de ponts tournants, le rayon doit être saisi dans une boîte de dialogue sur la barre d'état. Le rayon doit être modifié avant les étapes suivantes.
+END
+STEP
+COMMAND Turntable
+BIGPAUSE
+PARAMETER turntable diameter 7.5
+MOUSE 2 18.0 9.000
+MOUSE 3 6.0 6.0
+MESSAGE
+_________________________________________
+
+Ensuite, le pont tournant est déplacé vers son emplacement final.
+END
+BIGPAUSE
+MOUSE 4 6.0 6.0
+MESSAGE
+=========================================
+END
+STEP
+REGRESSION START 10 - turntable
+TURNTABLE 1 0 0 0 0 DEMO 2 6.000000 6.000000 0 3.750000 0
+	END
+REGRESSION END
+CLEAR
