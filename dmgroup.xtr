@@ -34,9 +34,9 @@ COMMAND DrawLine
 MOUSE 2 2.500 3.000
 MOUSE 4 2.500 1.500
 COMMAND DrawLine
-KEYSTATE 12
+KEYSTATE A
 MOUSE 2 3.200 3.000
-KEYSTATE 12
+KEYSTATE A
 MOUSE 4 3.200 1.500
 STEP
 COMMAND DrawFilledBox
@@ -63,14 +63,14 @@ MOUSE 4 8.312 1.312
 MESSAGE
 _________________________________________
 
-Et maintenant, appliquez la commande <Groupe>.
+Et maintenant, appliquez la commande <Group>.
 END
 STEP
 PARAMETER misc cmdGroup
 MESSAGE
 _________________________________________
 
-La boîte de dialogue de commande <Grouper> affiche le titre (fabricant, description et numéro de pièce) de la nouvelle définition. Ces informations sont extraites des objets sélectionnés que vous regroupez.
+La boîte de dialogue de commande <Group> affiche le titre (fabricant, description et numéro de pièce) de la nouvelle définition. Ces informations sont extraites des objets sélectionnés que vous regroupez.
 END
 STEP
 MESSAGE
@@ -136,23 +136,23 @@ _________________________________________
 Maintenant, sélectionnez les lignes et les carrés.
 END
 STEP
-#KEYSTATE 12
+#KEYSTATE C
 MOUSE 1 2.469 2.812
-#KEYSTATE 12
+#KEYSTATE C
 MOUSE 2 2.469 2.812
-KEYSTATE 12
+KEYSTATE C
 MOUSE 4 2.469 2.812
-KEYSTATE 12
+KEYSTATE C
 MOUSE 2 2.688 2.875
-KEYSTATE 12
+KEYSTATE C
 MOUSE 4 2.688 2.875
-KEYSTATE 12
+KEYSTATE C
 MOUSE 2 3.188 2.844
-KEYSTATE 12
+KEYSTATE C
 MOUSE 4 3.188 2.844
-KEYSTATE 12
+KEYSTATE C
 MOUSE 2 2.812 1.656
-KEYSTATE 12
+KEYSTATE C
 MOUSE 4 2.812 1.656
 MOUSE 1 5.000 1.000
 MESSAGE
@@ -212,9 +212,9 @@ Ensuite, vous pouvez regrouper l'aiguillage avec les sections droites pour resta
 
 END
 STEP
-KEYSTATE 2
+KEYSTATE S
 MOUSE 2 4.625 1.969
-KEYSTATE 2
+KEYSTATE S
 MOUSE 4 4.625 1.969
 REGRESSION START 10 - group 1
 TURNOUT  16 0 32 0 0 DEMO 2 2.477615 1.950213 0 0.000000 "Peco-55	Modified Medium Right	SL-E395F"
@@ -292,9 +292,9 @@ BIGPAUSE
 MOUSE 1 5.219 3.000
 MOUSE 2 5.219 3.000
 MOUSE 4 5.219 3.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 2 5.219 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 4 5.219 2.000
 PARAMETER misc cmdDelete
 MESSAGE
@@ -324,13 +324,13 @@ END
 STEP
 ORIG 1.0 0.0 0.0
 COMMAND Select
-KEYSTATE 12
+KEYSTATE S
 MOUSE 1 3.719 4.156
-KEYSTATE 12
+KEYSTATE S
 MOUSE 2 3.719 4.156
-KEYSTATE 12
+KEYSTATE S
 MOUSE 3 10.531 0.969
-KEYSTATE 12
+KEYSTATE S
 MOUSE 4 10.531 0.969
 BIGPAUSE
 PARAMETER misc cmdGroup
@@ -343,9 +343,9 @@ _________________________________________
 Notez que l'aiguillage dans la barre d'objets est le même que celui du plan.Assurez-vous que votre nouvelle définition est alignée comme vous le souhaitez.
 END
 STEP
-KEYSTATE 2
+KEYSTATE S
 MOUSE 2 5.000 2.188
-KEYSTATE 2
+KEYSTATE S
 MOUSE 4 5.000 2.188
 REGRESSION START 10 - group 2
 STRAIGHT 19 0 0 0 0 DEMO 2
@@ -389,21 +389,21 @@ MOUSE 3 10.000 2.000
 MOUSE 4 10.000 2.000
 MESSAGE
 
-Lorsque nous créons la courbe à partir du point de fin de la voie droite,nous devons maintenir la touche Maj enfoncée pour empêcher XTrckCAD d'essayer de joindre les deux voies.
+Lorsque nous créons la courbe à partir du point de fin de la voie droite,nous devons maintenir la touche <Shift> enfoncée pour empêcher XTrckCAD d'essayer de joindre les deux voies.
 END
 COMMAND CurveEndPt
 MOUSE 1 2.000 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 2 2.000 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 3 9.000 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 4 9.000 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 2 9.000 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 3 8.875 3.062
-KEYSTATE 12
+KEYSTATE S
 MOUSE 4 8.875 3.062
 MESSAGE
 _________________________________________
@@ -422,7 +422,7 @@ _________________________________________
 
 Nous avons réglé la longueur à 7,5".
 
-Lorsque nous modifions la longueur, chaque extrémité est poussée pour raccourcir la voie, nous souhaitons que seule l'extrémité correcte soit déplacée.Pour contrôler cela, réglez le pivot sur la Premiere. Cela signifie que l'extrémité gauche reste inchangée si nous changeons la longueur (ou l'angle) de la voie.
+Si nous modifions la longueur, chaque point d'extrémité sera déplacé pour raccourcir la voie.Nous voulons simplement déplacer le point d'extrémité droit.Pour ce faire, modifiez le verrouillage en premier, ce qui signifie que le point d'extrémité gauche restera inchangé lorsque nous modifierons la longueur (ou l'angle) de la voie.
 END
 STEP
 #DESCRIBE Pivot	0
@@ -451,7 +451,7 @@ MOUSE 4 7.688 2.625
 MESSAGE
 _________________________________________
 
-Voici le point d'extrémité gauche que nous ne voulons pas déplacer, il est le deuxième point d'extrémité. Nous allons donc en faire un point fixe comme pivot.
+Ici, le point d'extrémité gauche (que nous ne voulons pas déplacer), est le deuxième point d'extrémité, nous allons donc en faire le verrou.
 END
 STEP
 #DESCRIBE Pivot	2
@@ -483,11 +483,11 @@ COMMAND Select
 MOUSE 1 7.500 2.750
 MOUSE 2 7.500 2.750
 MOUSE 4 7.500 2.750
-KEYSTATE 12
+KEYSTATE S
 MOUSE 1 8.000 2.000
-KEYSTATE 12
+KEYSTATE S
 MOUSE 2 8.000 2.000
-KEYSTATE 12
+KEYSTATE s
 MOUSE 4 8.000 2.000
 MESSAGE
 et groupez les.
@@ -503,7 +503,7 @@ PARAMETER group partno 99-L
 MESSAGE
 _________________________________________
 
-Si les deux voies ont une extrémité commune, vous obtiendrez un aiguillage qui peut être contrôlé en mode de fonctionnement. Sinon, il s'agira simplement de deux voies groupées.
+Si les deux voies ont un point de fin commun, elles formeront un aiguillage et pourront être commutées avec la commande <Train>. Sinon, il ne s'agira que de deux segments de voies groupées.
 END
 STEP
 PARAMETER group ok
@@ -512,7 +512,7 @@ _________________________________________
 
 Nous avons créé un aiguillage gauche et nous voulons également une version à droite.
 
-Nous utilisons la commande <miroir>.
+Nous utilisons la commande <Flip>.
 END
 STEP
 COMMAND Select
